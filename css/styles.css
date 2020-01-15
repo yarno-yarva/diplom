@@ -1,3 +1,17 @@
+@font-face {
+  font-family: OpenSans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-weight: 700;
+  font-style: bold;
+}
+
 body {
  margin: 0;
  border: 0;
@@ -6,46 +20,104 @@ body {
  -moz-appearance: none;
 }
 
-.header {
-  position: relative;
-  background-size: cover;
-  top: 0;
-  left: 0;
-  background-image: url("images/footbal_1920.jpg");
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center center;
+h1 {
+  font-size: 90px;
+  color: #ffffff;
+  margin: 0;
 }
 
-.header::after {
+
+/*----------------------- HEADER ----------------------------------------------*/
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #0a0e34;
+
+}
+
+  .header::after {
   content: "";
-  background-color: #000000;
+  background-color: #0a0e34;
+  background-size: cover;
+  background-image: url("file:///Users/yarno/Documents/GitHub/diplom/images/football_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;  
-  opacity: 0.6; 
-}
+  bottom: 0; 
+  opacity: 0.1; 
+  
+} 
 
 .container {
   height: 956px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
   z-index: 1;
   
-  width: 1170px;
-  padding: 30px 15px;
+  width: 100%;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   }
 
 .header-logo {
   position: relative;
-  top: 0;
-  left: 0;
-  width: 180px;
+  width: 184px;
+  height: 53px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #ffffff;
+}
+
+.header-title {
+ width: 80%;
+display: flex;
+flex-direction: column;
+}
+
+.header-title-down {
+  margin-left: 30%;
+}
+
+.market-button {
+  display: flex;
+  padding-bottom: 110px;
+}
+
+.market-button-apple, .market-button-google {
+  width: 310px;
+  height: 77px;
+  background-color: #5e42b0;
+  border-radius: 77px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-apple {
+   width: 40px;
+   fill: #ffffff;
+}
+.button-text {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 28px; 
+}
+
+.button-text-bold {
+ 
+ font-weight: bold;
 }

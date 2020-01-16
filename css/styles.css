@@ -72,7 +72,7 @@ p {
   content: "";
   background-color: #0a0e34;
   background-size: cover;
-  background-image: url("file:///Users/yarno/Documents/GitHub/diplom/images/football_1920.jpg");
+  background-image: url("https://yarno-yarva.github.io/diplom/images/football_1920.jpg"), url(images/football_1920.jpg);;
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;

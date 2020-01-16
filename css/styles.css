@@ -195,9 +195,10 @@ flex-direction: column;
   left: 0;
  }
 
+
 *.athlets-left::after {
   content: "";
-  background-image: url("file:///Users/yarno/Documents/GitHub/diplom/images/footballer_566.png");
+  background-image: url("/images/footballer_566.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right top;

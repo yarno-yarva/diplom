@@ -198,7 +198,7 @@ flex-direction: column;
 
 *.athlets-left::after {
   content: "";
-  background-image: url("https://yarno-yarva.github.io/diplom/images/footballer_566.png");
+  background-image: url("https://yarno-yarva.github.io/diplom/images/footballer_566.png"), url(images/footballer_566.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right top;

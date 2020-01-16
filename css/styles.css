@@ -88,7 +88,7 @@ flex-direction: column;
   margin-left: 30%;
 }
 
-.market-button {
+.market-buttons {
   display: flex;
   padding-bottom: 110px;
 }
@@ -104,8 +104,8 @@ flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.logo-apple {
-   width: 40px;
+.logo-apple, .logo-google {
+   width: 45px;
    fill: #ffffff;
 }
 .button-text {
@@ -118,6 +118,16 @@ flex-direction: column;
 }
 
 .button-text-bold {
- 
+
  font-weight: bold;
 }
+
+/*-------------------------- MAIN -----------------------------*/
+
+.athlets {
+height: 908px;
+ background-image: url("file:///Users/yarno/Documents/GitHub/diplom/images/footballer_566.png");
+  background-repeat: no-repeat; 
+  background-position: 283px center;
+}
+

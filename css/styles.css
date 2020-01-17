@@ -275,14 +275,50 @@ flex-direction: column;
   border-width: 5px; 
 }
 
+
+
+/*---------------- Media -----------------*/
+
+
 @media (max-width: 1920px) and (min-width: 961px) {
 
 }
 
 @media (max-width: 960px) and (min-width: 641px) {
 
+  .header::after {
+  content: "";
+  background-color: #0a0e34;
+  background-size: cover;
+  background-image: url("https://yarno-yarva.github.io/diplom/images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  opacity: 0.1; 
+}
+
 }
 
 @media (max-width: 640px) {
-  
+
+.header::after {
+  content: "";
+  background-color: #0a0e34;
+  background-size: cover;
+  background-image: url("https://yarno-yarva.github.io/diplom/images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  opacity: 0.5; 
+}
+
+
 }

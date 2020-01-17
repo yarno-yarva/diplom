@@ -65,8 +65,7 @@ p {
   top: 0;
   left: 0;
   background-color: #0a0e34;
-
-}
+  }
 
   .header::after {
   content: "";
@@ -92,7 +91,6 @@ p {
   align-items: center;
   position: relative;
   z-index: 1;
-  
   width: 100%;
   max-width: 1920px;
   margin-left: auto;
@@ -286,7 +284,10 @@ flex-direction: column;
 
 @media (max-width: 960px) and (min-width: 641px) {
 
-  .header::after {
+  .container {
+  max-width: 960px;
+
+ .header::after {
   content: "";
   background-color: #0a0e34;
   background-size: cover;
@@ -300,10 +301,20 @@ flex-direction: column;
   bottom: 0; 
   opacity: 0.1; 
 }
-
+   
 }
 
 @media (max-width: 640px) {
+
+ h1 {
+  font-size: 28px;
+  line-height: 31px;
+ } 
+
+.container {
+  height: 566px;
+  max-width: 320px;
+}
 
 .header::after {
   content: "";
@@ -320,5 +331,9 @@ flex-direction: column;
   opacity: 0.5; 
 }
 
+.market-buttons {
+    flex-direction: column;
+   }
 
+}
 }

@@ -157,74 +157,57 @@ flex-direction: column;
 
 .athlets {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 890px;
   position: relative;
-   top: 0;
+  top: 0;
   left: 0;
  }
 
- .athlets-color-1{
+.athlets::after {
   content: "";
-  width: 100%;
-  position: absolute;
-  top: 414px;
-  height: 248px;
-  left: 0;
-  right: 0;
-  background-color: #f6f4fa;
- }
-
-.athlets-color-2{
-  content: "";
-  width: 100%;
-  position: absolute;
-  top: 662px;
-  height: 222px;
-  left: 0;
-  right: 0;
-  background-color: #5e42b0;
- }
-
-
-
-.athlets-left {
-  width: 50%;
-   position: relative;
-   top: 0;
-  left: 0;
- }
-
-
-*.athlets-left::after {
-  content: "";
-  background-image: url("https://yarno-yarva.github.io/diplom/images/footballer_566.png"), url(images/footballer_566.png);
+  background-image: url("https://yarno-yarva.github.io/diplom/images/footballer_566.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: center; top;
   position: absolute;
   top: 20px;
   height: 908px;
-  left: 0;
+  left: -566px;
   right: 0;
   bottom: 0;
   z-index: 3; 
   }
 
-
-.athlets-right {
-  width: 50%;
-  z-index: 1;
-}
-
-.athlets-right-block {
-  max-width: 700px;
+.athlets-title {
   margin-top: 100px;
   margin-left: 48px;
 }
+.athlets-color-1{
+  width: 100%;
+  background-color: #ffffff;
+ }
+
+.athlets-color-2{
+  width: 100%;
+  background-color: #f6f4fa;
+ }
+
+.athlets-color-3{
+  width: 100%;
+  background-color: #5e42b0;
+ }
+
+.athlets-content{
+  width: 50%;
+  margin-left: 50%;
+  z-index: 1;
+}
+
 
 .connection {
   margin-top: 90px;
+  margin-left: 48px;
   margin-bottom: 10px;
 }
 
@@ -242,7 +225,8 @@ flex-direction: column;
 }
 
 .collaboration {
-  margin-top: 90px;
+  margin-top: 53px;
+  margin-left: 48px;
   margin-bottom: 10px;
 }
 
@@ -259,7 +243,8 @@ flex-direction: column;
 }
 
 .growth {
-  margin-top: 90px;
+  margin-top: 53px;
+  margin-left: 48px;
   margin-bottom: 10px;
 }
 
@@ -275,6 +260,11 @@ flex-direction: column;
   border-width: 5px; 
 }
 
+.athlets-text {
+   max-width: 700px;
+   margin-left: 48px;
+   margin-bottom: 30px;
+}
 
 
 /*---------------- Media -----------------*/
@@ -309,6 +299,18 @@ h1 {
 .header-logo {
   width: 200px;
   }
+
+.athlets-title {
+  margin-top: 80px;
+  margin-left: 0px;
+}
+
+.athlets-content{
+  width: 62%;
+  margin-left: 38%;
+  z-index: 1;
+}
+
 
 .market-buttons {
      padding-bottom: 88px
@@ -348,6 +350,13 @@ h1 {
   bottom: 0; 
   opacity: 0.1; 
 }
+.header-title {
+ width: 100%;
+}
+.header-title-down {
+  margin-top: 20px;
+  margin-left: 40px;
+}
 
 .header-logo {
   width: 130px;
@@ -362,11 +371,17 @@ h1 {
 .market-button-apple, .market-button-google {
   height: 33px;
   border-radius: 33px;
+  justify-content: flex-start;
 }
 .market-button-apple {
   margin-right: 0;
   margin-bottom: 13px;
 }
+
+.logo-container {
+  margin-left: 80px;
+}
+
 .logo-apple, .logo-google {
    width: 20px;
    fill: #ffffff;

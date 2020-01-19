@@ -353,10 +353,7 @@ flex-direction: column;
  } 
 
  .block-number {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
   font-size: 24px;
   line-height: 35px;
   font-weight: bold;
@@ -419,6 +416,15 @@ flex-direction: column;
   opacity: 0.1; 
   
 } 
+
+.footer-logo {
+  width: 184px;
+  height: 53px;
+  padding-bottom: : 30px;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #ffffff;
+}
 
 /*---------------- Media  min 1920-----------------*/
 

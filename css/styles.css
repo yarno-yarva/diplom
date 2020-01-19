@@ -60,7 +60,7 @@ p {
 }
 /*----------------------- HEADER ----------------------------------------------*/
 
-.header {
+.header, .footer {
   position: relative;
   top: 0;
   left: 0;
@@ -402,6 +402,23 @@ flex-direction: column;
   max-width: 650px;
 }
 
+/*-------------------------- FOOTER --------------------*/
+
+.footer::after {
+  content: "";
+  background-color: #0a0e34;
+  background-size: cover;
+  background-image: url("https://yarno-yarva.github.io/diplom/images/game_1920.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; 
+  opacity: 0.1; 
+  
+} 
 
 /*---------------- Media  min 1920-----------------*/
 

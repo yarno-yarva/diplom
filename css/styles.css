@@ -32,7 +32,7 @@ h1 {
 
 h2 {
    font-size: 80px;
-   color: #c1c1c1;
+   color: #e7e7e7;
    margin: 0;
    font-weight: bold;
    text-transform: uppercase;
@@ -183,17 +183,23 @@ flex-direction: column;
   margin-top: 100px;
   margin-left: 48px;
 }
-.athlets-color-1{
+
+.block-color-0 {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.block-color-1{
   width: 100%;
   background-color: #ffffff;
  }
 
-.athlets-color-2{
+.block-color-2{
   width: 100%;
   background-color: #f6f4fa;
  }
 
-.athlets-color-3{
+.block-color-3{
   width: 100%;
   background-color: #5e42b0;
  }
@@ -266,6 +272,21 @@ flex-direction: column;
    margin-bottom: 30px;
 }
 
+.players {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+ }
+
+.players-content{
+  width: 50%;
+  margin-left:0%;
+  z-index: 1;
+}
+
 
 /*---------------- Media -----------------*/
 
@@ -282,6 +303,7 @@ h1 {
   .container {
   max-width: 960px;
 }
+
  .header::after {
   content: "";
   background-color: #0a0e34;
@@ -296,12 +318,38 @@ h1 {
   bottom: 0; 
   opacity: 0.1; 
  }
+
 .header-logo {
   width: 200px;
   }
 
+.market-buttons {
+     padding-bottom: 88px;
+   }  
+
+
+
+.button-text {
+  font-size: 14px;
+}
+
+.athlets::after {
+  content: "";
+  background-image: url("https://yarno-yarva.github.io/diplom/images/footballer_497.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; top;
+  position: absolute;
+  top: 80px;
+  height: 699px;
+  left: -20%;
+  right: 60%;
+  bottom: 0;
+  z-index: 3; 
+  }
+
 .athlets-title {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-left: 0px;
 }
 
@@ -311,14 +359,67 @@ h1 {
   z-index: 1;
 }
 
-
-.market-buttons {
-     padding-bottom: 88px
-   }  
+.connection {
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-bottom: 10px;
 }
 
-.button-text {
-  font-size: 14px;
+
+.connection::before {
+  content: "01";
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  margin-right: 10px;
+  vertical-align: super;
+  border-bottom: solid;
+  border-color: #5e42b0;
+  border-width: 5px;
+}
+
+.collaboration {
+  margin-top: 53px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.collaboration::before {
+  content: "02";
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  margin-right: 10px;
+  vertical-align: super;
+  border-bottom: solid;
+  border-color: #5e42b0;
+  border-width: 5px; 
+}
+
+.growth {
+  margin-top: 53px;
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.growth::before {
+  content: "03";
+  font-size: 18px;
+  line-height: 20px;
+  color: black;
+  margin-right: 10px;
+  vertical-align: super;
+  border-bottom: solid;
+  border-color: #efefef;
+  border-width: 5px; 
+}
+
+.athlets-text {
+   max-width: 440px;
+   margin-left: 0px;
+   margin-bottom: 30px;
+   font-size: 16px;
+ }
 }
 
 @media (max-width: 640px) {
@@ -328,6 +429,9 @@ h1 {
   line-height: 31px;
  } 
 
+h2 {
+  font-size: 50px;
+}
 
 .container {
   height: 566px;
@@ -389,5 +493,33 @@ h1 {
 
 .button-text {
   font-size: 8px;
+}
+
+.athlets::after {
+  content: "";
+  background-image: url("https://yarno-yarva.github.io/diplom/images/footballer_192.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; top;
+  position: absolute;
+  top: 70px;
+  height: 281px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3; 
+  }
+
+.athlets-title {
+  margin-top: 20px;
+  margin-left: 0px;
+}
+.athlets-content {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 }

@@ -155,6 +155,7 @@ flex-direction: column;
 
 /*-------------------------- MAIN -----------------------------*/
 
+/*-----------------------Athlets -------------------*/
 .athlets {
   display: flex;
   flex-direction: column;
@@ -203,6 +204,12 @@ flex-direction: column;
   width: 100%;
   background-color: #5e42b0;
  }
+
+.block-color-4{
+  width: 100%;
+  background-color: #14163b;
+ }
+
 
 .athlets-content{
   width: 50%;
@@ -272,6 +279,8 @@ flex-direction: column;
    margin-bottom: 30px;
 }
 
+/*---------------------- Players ---------------------------------------*/
+
 .players {
   display: flex;
   flex-direction: column;
@@ -281,17 +290,131 @@ flex-direction: column;
   left: 0;
  }
 
+ .players::after {
+  content: "";
+  background-image: url("https://yarno-yarva.github.io/diplom/images/basketballer_991.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; top;
+  position: absolute;
+  top: 20px;
+  height: 815px;
+  left: 0px;
+  right: -641px;
+  bottom: 0;
+  z-index: 3; 
+  }
+
 .players-content{
-  width: 50%;
-  margin-left:0%;
+  width: 100%;
+  max-width: 1534px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 1;
 }
+.players-text {
+   max-width: 750px;
+   margin-left: 48px;
+   margin-bottom: 30px;
+ }
 
+.profit {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.block-profit {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.block-number-container {
+  display: flex;
+  position: absolute;
+  top:210px ;
+  left: 50%;
+  margin-left: -83px;
+  height: 152px;
+  width: 166px;
+  background-color: #5e42b0;
+  z-index: 1;  
+ } 
+
+ .block-number {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: bold;
+  color: #f5f6f7;
+  border-bottom: solid;
+  border-color: #8f7bc8;
+  border-width: 5px; 
+
+ }
+
+.background-be-active{
+  content: "";
+  background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
+  width: 50%;
+  height: 730px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left; top;
+}
+
+.background-find-contact{
+  content: "";
+  background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
+  width: 50%;
+  height: 730px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left; top;
+}
+
+.background-work-it{
+  content: "";
+  background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
+  width: 50%;
+  height: 730px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left; top;
+}
+
+
+.profit-content {
+  width: 50%;
+  max-width: 650px;
+}
+
+ .profit-img {
+  
+ }
 
 /*---------------- Media -----------------*/
 
 
-@media (max-width: 1920px) and (min-width: 961px) {
+@media (min-width: 1920px) {
+.profit {
+ max-width: 2048px; 
+}
+
+.background-be-active{
+     background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_1024.jpg");
+     height: 683px; 
+}
 
 }
 

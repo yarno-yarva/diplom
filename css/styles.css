@@ -318,6 +318,10 @@ flex-direction: column;
    margin-bottom: 30px;
  }
 
+
+/*------------------------ Profit -----------------*/
+
+
 .profit {
   display: flex;
   flex-direction: column;
@@ -364,7 +368,6 @@ flex-direction: column;
  }
 
 .background-be-active{
-  content: "";
   background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
   width: 50%;
   height: 730px;
@@ -374,18 +377,18 @@ flex-direction: column;
 }
 
 .background-find-contact{
-  content: "";
-  background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
+  background-image: url("https://yarno-yarva.github.io/diplom/images/find-contact_960.jpg");
   width: 50%;
   height: 730px;
   background-size: auto;
   background-repeat: no-repeat;
   background-position: left; top;
+  order: 1;
+
 }
 
 .background-work-it{
-  content: "";
-  background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
+  background-image: url("https://yarno-yarva.github.io/diplom/images/work-it_960.jpg");
   width: 50%;
   height: 730px;
   background-size: auto;
@@ -399,11 +402,8 @@ flex-direction: column;
   max-width: 650px;
 }
 
- .profit-img {
-  
- }
 
-/*---------------- Media -----------------*/
+/*---------------- Media  min 1920-----------------*/
 
 
 @media (min-width: 1920px) {
@@ -415,8 +415,19 @@ flex-direction: column;
      background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_1024.jpg");
      height: 683px; 
 }
+.background-find-contact{
+    background-image: url("https://yarno-yarva.github.io/diplom/images/find-contact_1024.jpg");
+    height: 683px;
+    order: 1; 
+ }
+.background-work-it{
+   background-image: url("https://yarno-yarva.github.io/diplom/images/work-it_1024.jpg");
+    height: 683px;  
+}
 
 }
+
+/*---------------- Media -- 641-- 960  -----------------*/
 
 @media (max-width: 960px) and (min-width: 641px) {
 
@@ -449,8 +460,6 @@ h1 {
 .market-buttons {
      padding-bottom: 88px;
    }  
-
-
 
 .button-text {
   font-size: 14px;
@@ -543,7 +552,66 @@ h1 {
    margin-bottom: 30px;
    font-size: 16px;
  }
+
+/*---------------- Media  -- 641-- 960  PROFIT -----------------*/
+
+.profit {
+  display: flex;
+  flex-direction: column;
+  max-width: 768px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.block-profit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
+
+.block-number-container {
+  display: flex;
+  position: absolute;
+  top:500px ;
+  left: 0;
+  margin-left: 35px;
+  height: 152px;
+  width: 166px;
+  background-color: #5e42b0;
+  z-index: 1;  
+ } 
+
+.background-be-active{
+     background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_960.jpg");
+     height: 584px;
+     width: 100%; 
+}
+.background-find-contact{
+    background-image: url("https://yarno-yarva.github.io/diplom/images/find-contact_960.jpg");
+    height: 584px;
+    width: 100%; 
+    order: 0;
+ }
+.background-work-it{
+   background-image: url("https://yarno-yarva.github.io/diplom/images/work-it_960.jpg");
+    height: 584px;
+    width: 100%;  
+}
+
+.profit-content {
+    width: 100%;
+    margin-top: 86px;
+    max-width: 768px;
+  }
+
+
+/*---------------- Media -- 641 -----------------*/
+
 
 @media (max-width: 640px) {
 

@@ -499,13 +499,14 @@ left: 0;
 
 .market-buttons-footer {
   display: flex;
-}
+ }
 
 
 /*---------------- Media  min 1920-----------------*/
 
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px)
+ {
 .profit {
  max-width: 2048px; 
 }
@@ -519,6 +520,7 @@ left: 0;
     height: 683px;
     order: 1; 
  }
+
 .background-work-it{
    background-image: url("https://yarno-yarva.github.io/diplom/images/work-it_1024.jpg");
     height: 683px;  
@@ -730,9 +732,11 @@ h3 {
     margin-left: 0; 
     margin-top: 80px;
     text-align: center;
-
 }
 
+.market-buttons-footer {
+  display: flex;
+ }
 
 }
 
@@ -961,5 +965,25 @@ font-size: 16px;
     margin-bottom: 80px;
     max-width: 280px;
 }
+
+
+.download-app {
+flex-direction: column;
+align-items: center;
+
+}
+
+.download-app-title {
+  font-size: 32px;
+}
+
+.download-app-text {
+  font-size: 14px;
+}
+
+.market-buttons-footer {
+  display: flex;
+  flex-direction: column;
+ }
 
 }

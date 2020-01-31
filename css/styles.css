@@ -758,11 +758,13 @@ h3 {
   font-size: 23px;
 }
 
-.container {
+.container, .footer-container {
   height: 566px;
-  max-width: 320px;
+  max-width: 280px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header::after {
@@ -798,6 +800,7 @@ h3 {
    }
 
 .market-button-apple, .market-button-google {
+  width: 100%;
   height: 33px;
   border-radius: 33px;
   justify-content: flex-start;
@@ -922,6 +925,18 @@ h3 {
   font-size: 14px;
  }
 
+ .block-number::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 18px;
+    left: 0;
+    width: 17px;
+    height: 4px;
+    background-color: #8f7bc8;
+    border-radius: 4px;
+}
+
 .background-be-active{
      background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_640.jpg");
      height: 350px;
@@ -970,6 +985,7 @@ font-size: 16px;
 .download-app {
 flex-direction: column;
 align-items: center;
+margin-top: 97px;
 
 }
 
@@ -984,6 +1000,30 @@ align-items: center;
 .market-buttons-footer {
   display: flex;
   flex-direction: column;
+  width: 280px;
  }
+
+.logo-container-footer {
+    display: flex;
+    width: 70px;
+    height: 75px;
+    border-radius: 9px;
+}
+
+.logo-no-text {
+width: 58px;
+height: 48px;
+}
+
+.download-app-text-container {
+  margin-top: 60px;
+  margin-left: 0;
+  text-align: center;
+}
+.footer-logo {
+    width: 132px;
+    height: 40px;
+    margin-bottom: 10px;
+}
 
 }

@@ -894,7 +894,6 @@ h3 {
 .profit {
   display: flex;
   flex-direction: column;
-  max-width: 320px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -914,8 +913,8 @@ h3 {
   display: flex;
   position: absolute;
   top:295px ;
-  left: 0;
-  margin-left: 20px;
+  left: calc(50% - 140px);
+  margin-left: 0px;
   height: 70px;
   width: 70px;
   background-color: #5e42b0;
@@ -942,20 +941,20 @@ h3 {
      background-image: url("https://yarno-yarva.github.io/diplom/images/be-active_640.jpg");
      height: 350px;
      width: 100%;
-     background-size: contain; 
+     background-size: cover; 
 }
 .background-find-contact{
     background-image: url("https://yarno-yarva.github.io/diplom/images/find-contact_640.jpg");
     height: 350px;
     width: 100%; 
-   background-size: contain;
+   background-size: cover;
     order: 0;
  }
 .background-work-it{
    background-image: url("https://yarno-yarva.github.io/diplom/images/work-it_640.jpg");
     height: 350px;
     width: 100%;
-    background-size: contain;  
+    background-size: cover;  
 
 }
 
